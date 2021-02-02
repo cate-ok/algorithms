@@ -11,7 +11,7 @@ namespace Algorithms.Algorithms.Logic
                 return false;
             }                
             int sqrt = (int)Math.Sqrt(x);
-            for (var i=2; i<sqrt; i++)
+            for (var i=2; i<sqrt+1; i++)
             {
                 if (x % i == 0)
                 { 
