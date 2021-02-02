@@ -5,12 +5,12 @@ namespace Algorithms.Algorithms.Tree
 {
     public class BinaryTreeBuilder
     {
-        public BinaryTreeNode MinimalTree(int[] nums)
+        public BinaryTreeNode<int> MinimalTree(int[] nums)
         {
             return BuildTree(nums, 0, nums.Length-1);
         }
 
-        BinaryTreeNode BuildTree(int[] nums, int start, int end)
+        BinaryTreeNode<int> BuildTree(int[] nums, int start, int end)
         {
             Console.WriteLine("start: " + start.ToString());
             Console.WriteLine("end: " + end.ToString());
@@ -18,7 +18,7 @@ namespace Algorithms.Algorithms.Tree
                 return null;
             var center = (end + start) / 2;
             Console.WriteLine("center: " + center.ToString());
-            BinaryTreeNode n = new BinaryTreeNode(nums[center].ToString());
+            BinaryTreeNode<int> n = new BinaryTreeNode<int>(nums[center]);
             if (center > 0)
             {
                 n.left = BuildTree(nums, start, center-1);

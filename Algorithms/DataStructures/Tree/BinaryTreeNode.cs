@@ -2,13 +2,13 @@
 
 namespace Algorithms.DataStructures.Tree
 {
-    public class BinaryTreeNode
+    public class BinaryTreeNode<T>
     {
-        public string name;
-        public BinaryTreeNode left;
-        public BinaryTreeNode right;
+        public T name;
+        public BinaryTreeNode<T> left;
+        public BinaryTreeNode<T> right;
 
-        public BinaryTreeNode(string n)
+        public BinaryTreeNode(T n)
         {
             name = n;
         }

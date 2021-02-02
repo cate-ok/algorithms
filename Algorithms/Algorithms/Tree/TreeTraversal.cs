@@ -3,14 +3,14 @@ using Algorithms.DataStructures.Tree;
 
 namespace Algorithms.Algorithms.Tree
 {
-    public class TreeTraversal
+    public class TreeTraversal<T>
     {
-        void PrintNodeName(BinaryTreeNode n)
+        void PrintNodeName(BinaryTreeNode<T> n)
         {
             Console.WriteLine(n.name);
         }
 
-        public void InOrderTraversal(BinaryTreeNode node)
+        public void InOrderTraversal(BinaryTreeNode<T> node)
         {
             if (node!= null) {                
                 InOrderTraversal(node.left);
@@ -19,7 +19,7 @@ namespace Algorithms.Algorithms.Tree
             }
         }
 
-        public void PreOrderTraversal(BinaryTreeNode node)
+        public void PreOrderTraversal(BinaryTreeNode<T> node)
         {
             if (node != null)
             {
@@ -29,7 +29,7 @@ namespace Algorithms.Algorithms.Tree
             }
         }
 
-        public void PostOrderTraversal(BinaryTreeNode node)
+        public void PostOrderTraversal(BinaryTreeNode<T> node)
         {
             if (node != null)
             {
