@@ -1,5 +1,6 @@
 ﻿using Algorithms.Algorithms.Tree;
 using Algorithms.DataStructures.Tree;
+using System;
 
 namespace PracticeApp.Algorithms.Tree
 {
@@ -13,11 +14,17 @@ namespace PracticeApp.Algorithms.Tree
             n1.right = new BinaryTreeNode<int>(7);
             root.left = n1;
             var n2 = new BinaryTreeNode<int>(20);
-            n2.left = new BinaryTreeNode<int>(15);
+            n1.left = new BinaryTreeNode<int>(15);
             root.right = n2;
 
-            var treeTraversal = new TreeTraversal<int>();
-            treeTraversal.InOrderTraversal(root);
+            TreeTraversal<int> treeTraversal = new TreeTraversal<int>();
+            var callback = new ProcessNode<int>(PrintNodeName);
+            treeTraversal.InOrderTraversal(root, callback);            
+        }
+
+        void PrintNodeName(BinaryTreeNode<int> n)
+        {
+            Console.WriteLine(n.name);
         }
     }
 }

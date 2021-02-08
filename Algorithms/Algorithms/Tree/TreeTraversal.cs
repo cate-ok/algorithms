@@ -1,41 +1,40 @@
-﻿using System;
-using Algorithms.DataStructures.Tree;
+﻿using Algorithms.DataStructures.Tree;
 
 namespace Algorithms.Algorithms.Tree
 {
+    public delegate void ProcessNode<T>(BinaryTreeNode<T> n);
+
     public class TreeTraversal<T>
     {
-        void PrintNodeName(BinaryTreeNode<T> n)
-        {
-            Console.WriteLine(n.name);
-        }
-
-        public void InOrderTraversal(BinaryTreeNode<T> node)
+        public void InOrderTraversal(BinaryTreeNode<T> node, ProcessNode<T> callback)
         {
             if (node!= null) {                
-                InOrderTraversal(node.left);
-                PrintNodeName(node);
-                InOrderTraversal(node.right);
+                InOrderTraversal(node.left, callback);
+                callback?.Invoke(node);
+                //PrintNodeName(node);
+                InOrderTraversal(node.right, callback);
             }
         }
 
-        public void PreOrderTraversal(BinaryTreeNode<T> node)
+        public void PreOrderTraversal(BinaryTreeNode<T> node, ProcessNode<T> callback)
         {
             if (node != null)
             {
-                PrintNodeName(node);
-                InOrderTraversal(node.left);                
-                InOrderTraversal(node.right);
+                callback?.Invoke(node);
+                //PrintNodeName(node);
+                PreOrderTraversal(node.left, callback);
+                PreOrderTraversal(node.right, callback);
             }
         }
 
-        public void PostOrderTraversal(BinaryTreeNode<T> node)
+        public void PostOrderTraversal(BinaryTreeNode<T> node, ProcessNode<T> callback)
         {
             if (node != null)
             {
-                InOrderTraversal(node.left);
-                InOrderTraversal(node.right);
-                PrintNodeName(node);
+                PostOrderTraversal(node.left, callback);
+                PostOrderTraversal(node.right, callback);
+                callback?.Invoke(node);
+                //PrintNodeName(node);
             }
         }
     }

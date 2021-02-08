@@ -10,11 +10,15 @@ namespace PracticeApp
         {
             Console.WriteLine("Algorithms Examples");
 
-            //TreeTraversalExample treeTraversalExample = new TreeTraversalExample();
-            //treeTraversalExample.InOrderTraversalTest();
+            TreeTraversalExample treeTraversalExample = new TreeTraversalExample();
+            treeTraversalExample.InOrderTraversalTest();
 
-            //BTBuilderExample btExample = new BTBuilderExample();
-            //btExample.MinimalTreeExample();
+            Console.WriteLine("---------------------------------------------");
+
+            BTBuilderExample btExample = new BTBuilderExample();
+            btExample.MinimalTreeExample();
+
+            Console.WriteLine("---------------------------------------------");
 
             TrieCreator trieCreator = new TrieCreator();
             string[] words = new string[]
