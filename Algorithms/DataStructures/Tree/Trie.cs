@@ -13,6 +13,14 @@ namespace Algorithms.DataStructures.Tree
             this.root = new TrieNode('*');
         }
 
+        public Trie(string[] words)
+        {            
+            for (var i = 0; i < words.Length; i++)
+            {
+                this.Add(words[i]);
+            }
+        }
+
         public void Add(string word)
         {
             AddWord(this.root, word);

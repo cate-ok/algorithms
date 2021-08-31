@@ -5,7 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataStructures\Graph\" />
+    <Folder Include="Algorithms\Arrays\" />
+    <Folder Include="Algorithms\Graph\" />
+    <Folder Include="Graphs\Algorithms\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Graphs\Data\unweighted_graph.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

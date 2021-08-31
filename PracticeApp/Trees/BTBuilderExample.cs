@@ -2,7 +2,7 @@
 using Algorithms.Algorithms.Tree;
 using Newtonsoft.Json;
 
-namespace PracticeApp.Algorithms.Tree
+namespace PracticeApp.Trees
 {
     public class BTBuilderExample
     {

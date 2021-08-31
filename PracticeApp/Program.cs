@@ -1,6 +1,4 @@
 ﻿using System;
-using Algorithms.DataStructures.Tree;
-using PracticeApp.Algorithms.Tree;
 
 namespace PracticeApp
 {
@@ -8,35 +6,35 @@ namespace PracticeApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Algorithms Examples");
+            //Console.WriteLine("Algorithms Examples");
 
-            TreeTraversalExample treeTraversalExample = new TreeTraversalExample();
-            treeTraversalExample.InOrderTraversalTest();
+            //TreeTraversalExample treeTraversalExample = new TreeTraversalExample();
+            //treeTraversalExample.InOrderTraversalTest();
 
-            Console.WriteLine("---------------------------------------------");
+            //Console.WriteLine("---------------------------------------------");
 
-            BTBuilderExample btExample = new BTBuilderExample();
-            btExample.MinimalTreeExample();
+            //BTBuilderExample btExample = new BTBuilderExample();
+            //btExample.MinimalTreeExample();
 
-            Console.WriteLine("---------------------------------------------");
+            //Console.WriteLine("---------------------------------------------");
 
-            TrieCreator trieCreator = new TrieCreator();
-            string[] words = new string[]
-            {
-                "cat",
-                "cant",
-                "cannot",
-                "dog"
-            };
-            Trie firstTree = trieCreator.CreateTrie(words);
+            //TrieCreator trieCreator = new TrieCreator();
+            //string[] words = new string[]
+            //{
+            //    "cat",
+            //    "cant",
+            //    "cannot",
+            //    "dog"
+            //};
+            //Trie firstTree = new Trie(words);
 
-            Console.WriteLine(firstTree.Search("c"));
-            Console.WriteLine(firstTree.Search("ca"));
-            Console.WriteLine(firstTree.Search("d"));
-            Console.WriteLine(firstTree.Search("cat"));
-            Console.WriteLine(firstTree.Search("cant"));
-            Console.WriteLine(firstTree.Search("canto"));
-            Console.WriteLine(firstTree.Search("ocat"));
+            //Console.WriteLine(firstTree.Search("c"));
+            //Console.WriteLine(firstTree.Search("ca"));
+            //Console.WriteLine(firstTree.Search("d"));
+            //Console.WriteLine(firstTree.Search("cat"));
+            //Console.WriteLine(firstTree.Search("cant"));
+            //Console.WriteLine(firstTree.Search("canto"));
+            //Console.WriteLine(firstTree.Search("ocat"));
 
         }
     }

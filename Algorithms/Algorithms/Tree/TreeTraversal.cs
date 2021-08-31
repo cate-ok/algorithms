@@ -11,7 +11,6 @@ namespace Algorithms.Algorithms.Tree
             if (node!= null) {                
                 InOrderTraversal(node.left, callback);
                 callback?.Invoke(node);
-                //PrintNodeName(node);
                 InOrderTraversal(node.right, callback);
             }
         }
@@ -21,7 +20,6 @@ namespace Algorithms.Algorithms.Tree
             if (node != null)
             {
                 callback?.Invoke(node);
-                //PrintNodeName(node);
                 PreOrderTraversal(node.left, callback);
                 PreOrderTraversal(node.right, callback);
             }
@@ -34,7 +32,6 @@ namespace Algorithms.Algorithms.Tree
                 PostOrderTraversal(node.left, callback);
                 PostOrderTraversal(node.right, callback);
                 callback?.Invoke(node);
-                //PrintNodeName(node);
             }
         }
     }

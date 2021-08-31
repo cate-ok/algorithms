@@ -2,7 +2,7 @@
 using Algorithms.DataStructures.Tree;
 using System;
 
-namespace PracticeApp.Algorithms.Tree
+namespace PracticeApp.Trees
 {
     public class TreeTraversalExample
     {
