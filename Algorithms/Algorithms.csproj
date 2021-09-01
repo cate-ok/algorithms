@@ -5,8 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Algorithms\Arrays\" />
-    <Folder Include="Algorithms\Graph\" />
+    <Compile Remove="Algorithms\Arrays\**" />
+    <Compile Remove="Algorithms\Graph\**" />
+    <EmbeddedResource Remove="Algorithms\Arrays\**" />
+    <EmbeddedResource Remove="Algorithms\Graph\**" />
+    <None Remove="Algorithms\Arrays\**" />
+    <None Remove="Algorithms\Graph\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Graphs\Algorithms\" />
   </ItemGroup>
 
