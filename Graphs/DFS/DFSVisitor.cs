@@ -1,8 +1,7 @@
-﻿using Algorithms.Graphs.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace Algorithms.Graphs.Algorithms
+namespace Algorithms.Graphs.DFS
 {
     public abstract class DFSVisitor<T>
     {

@@ -13,14 +13,4 @@
     <None Remove="Algorithms\Graph\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Graphs\Algorithms\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Graphs\Data\unweighted_graph.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
