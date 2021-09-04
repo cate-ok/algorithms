@@ -14,13 +14,13 @@ namespace Algorithms.Graphs.BFS
             foreach (var node in graph)
                 visited.Add(node.Data, false);  // mark all nodes as not visited
             Queue<Node> queue = new Queue<Node>();
-            Dictionary<char, int> pathLength = new Dictionary<char, int>();
+            Dictionary<char, int> d = new Dictionary<char, int>();  //pathLength
             Dictionary<char, Node> parents = new Dictionary<char, Node>();
             foreach (var node in graph)
             {
                 if (node.Data != endChar)
-                    pathLength.Add(node.Data, 0);
-                parents.Add(node.Data, null);
+                    d.Add(node.Data, 0);           //pathLength
+                parents.Add(node.Data, null);      // no parent
             }
 
             visited[start.Data] = true;
@@ -28,24 +28,21 @@ namespace Algorithms.Graphs.BFS
 
             while (queue.Count != 0)
             {
-                var node = queue.Dequeue();   // v
+                var node = queue.Dequeue();   // u
                 if (node.Data == endChar)
                 {
-                    return pathLength[node.Data];
+                    return d[node.Data];
                 }
                 for (var i = 0; i < node.Adjacents.Count; i++)
                 {
-                    Node toNode = node.Adjacents[i];
+                    Node toNode = node.Adjacents[i];   // v
                     if (!visited[toNode.Data])
                     {
                         visited[toNode.Data] = true;
                         queue.Enqueue(toNode);
 
-                        pathLength[toNode.Data] = pathLength[node.Data] + 1;
+                        d[toNode.Data] = d[node.Data] + 1;
                         parents[toNode.Data] = node;
-
-                        //d[to] = d[v] + 1;  //pathLength
-                        //p[to] = v;  //parents
                     }
                 }
             }
