@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Algorithms.Graphs.BFS
+namespace Graphs.BFS
 {
     public class BreadthFirstSearch
     {

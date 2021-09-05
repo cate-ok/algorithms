@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Algorithms.Graphs.BFS
+namespace Graphs
 {
     public class Node
     {

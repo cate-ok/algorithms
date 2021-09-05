@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Algorithms.Graphs.DFS
+namespace Graphs
 {
     public class GraphNode<T>
     {
