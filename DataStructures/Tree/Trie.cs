@@ -1,5 +1,5 @@
 ﻿
-namespace Algorithms.DataStructures.Tree
+namespace DataStructures.Tree
 {
     /// <summary>
     /// Prefix tree

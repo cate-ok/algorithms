@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithms.DataStructures.Queue
+namespace DataStructures.Queue
 {
     public interface IQueue<T>
     {

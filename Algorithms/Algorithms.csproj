@@ -13,4 +13,9 @@
     <None Remove="Algorithms\Graph\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
+    <ProjectReference Include="..\Graphs\Graphs.csproj" />
+  </ItemGroup>
+
 </Project>

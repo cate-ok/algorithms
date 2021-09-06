@@ -1,4 +1,4 @@
-﻿using Algorithms.DataStructures.Tree;
+﻿using DataStructures.Tree;
 using System;
 
 namespace Algorithms.Algorithms.Tree

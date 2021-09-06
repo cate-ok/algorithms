@@ -1,5 +1,5 @@
 ﻿using Algorithms.Algorithms.Tree;
-using Algorithms.DataStructures.Tree;
+using DataStructures.Tree;
 using System;
 
 namespace PracticeApp.Trees

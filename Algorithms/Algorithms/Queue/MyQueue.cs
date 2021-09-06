@@ -1,6 +1,6 @@
 ﻿using System;
-using Algorithms.DataStructures.Queue;
-using Algorithms.DataStructures.Stack;
+using DataStructures.Queue;
+using DataStructures.Stack;
 
 namespace Algorithms.Algorithms.Queue
 {

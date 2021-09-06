@@ -1,6 +1,6 @@
 ﻿using Xunit;
 using Algorithms.Algorithms.Tree;
-using Algorithms.DataStructures.Tree;
+using DataStructures.Tree;
 using System;
 
 namespace AlgorithmsTest.Algorithms.Tree

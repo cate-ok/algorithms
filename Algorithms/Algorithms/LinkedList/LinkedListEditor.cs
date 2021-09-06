@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Algorithms.DataStructures.LinkedList;
+using DataStructures.LinkedList;
 
 namespace Algorithms.Algorithms.LinkedList
 {

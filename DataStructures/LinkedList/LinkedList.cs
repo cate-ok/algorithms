@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithms.DataStructures.LinkedList
+namespace DataStructures.LinkedList
 {
     public class LinkedList
     {

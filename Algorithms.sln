@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeApp", "PracticeApp\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphs", "Graphs\Graphs.csproj", "{2D23BE69-128B-4B4B-8832-5D55F2A7D118}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphsTest", "GraphsTest\GraphsTest.csproj", "{EE8FD1A9-5C09-4B3E-8852-A8D03807A86F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphsTest", "GraphsTest\GraphsTest.csproj", "{EE8FD1A9-5C09-4B3E-8852-A8D03807A86F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{6940D65A-C558-43D6-A18C-038998E57D6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{EE8FD1A9-5C09-4B3E-8852-A8D03807A86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE8FD1A9-5C09-4B3E-8852-A8D03807A86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE8FD1A9-5C09-4B3E-8852-A8D03807A86F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6940D65A-C558-43D6-A18C-038998E57D6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6940D65A-C558-43D6-A18C-038998E57D6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6940D65A-C558-43D6-A18C-038998E57D6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6940D65A-C558-43D6-A18C-038998E57D6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

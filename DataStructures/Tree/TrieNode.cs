@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Algorithms.DataStructures.Tree
+namespace DataStructures.Tree
 {
     public class TrieNode
     {

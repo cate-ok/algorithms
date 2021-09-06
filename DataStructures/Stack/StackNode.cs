@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithms.DataStructures.Stack
+namespace DataStructures.Stack
 {
     public class StackNode<T>
     {
