@@ -64,18 +64,54 @@ namespace Pattern.BFS
             //}
             //Console.WriteLine();
 
-            TreeNode root = new TreeNode(12);
-            root.Left = new TreeNode(7);
-            root.Right = new TreeNode(1);
-            root.Right.Left = new TreeNode(10);
-            root.Right.Right = new TreeNode(5);
-            Console.WriteLine("Tree Minimum Depth: " + MinimumBinaryTreeDepth.FindDepth(root));
-            root.Left.Left = new TreeNode(9);
-            root.Right.Left.Left = new TreeNode(11);
-            Console.WriteLine("Tree Minimum Depth: " + MinimumBinaryTreeDepth.FindDepth(root));
-            Console.WriteLine();
+            //TreeNode root = new TreeNode(12);
+            //root.Left = new TreeNode(7);
+            //root.Right = new TreeNode(1);
+            //root.Right.Left = new TreeNode(10);
+            //root.Right.Right = new TreeNode(5);
+            //Console.WriteLine("Tree Minimum Depth: " + MinimumBinaryTreeDepth.FindDepth(root));
+            //root.Left.Left = new TreeNode(9);
+            //root.Right.Left.Left = new TreeNode(11);
+            //Console.WriteLine("Tree Minimum Depth: " + MinimumBinaryTreeDepth.FindDepth(root));
+            //Console.WriteLine();
 
 
+
+            //TreeNode root = new TreeNode(1);
+            //root.Left = new TreeNode(2);
+            //root.Right = new TreeNode(3);
+            //root.Left.Left = new TreeNode(4);
+            //root.Left.Right = new TreeNode(5);
+
+            //TreeNode result = LevelOrderSuccessor.FindSuccessor(root, 3);
+            //if (result != null)
+            //    Console.WriteLine(result.Value + " ");
+
+            //root = new TreeNode(12);
+            //root.Left = new TreeNode(7);
+            //root.Right = new TreeNode(1);
+            //root.Left.Left = new TreeNode(9);
+            //root.Right.Left = new TreeNode(10);
+            //root.Right.Right = new TreeNode(5);
+
+            //result = LevelOrderSuccessor.FindSuccessor(root, 9);
+            //if (result != null)
+            //    Console.WriteLine(result.Value + " ");
+
+            //result = LevelOrderSuccessor.FindSuccessor(root, 12);
+            //if (result != null)
+            //    Console.WriteLine(result.Value + " ");
+
+
+            TreeNodeLinked root = new TreeNodeLinked(12);
+            root.Left = new TreeNodeLinked(7);
+            root.Right = new TreeNodeLinked(1);
+            root.Left.Left = new TreeNodeLinked(9);
+            root.Right.Left = new TreeNodeLinked(10);
+            root.Right.Right = new TreeNodeLinked(5);
+            ConnectLevelOrderSiblings.Connect(root);
+            Console.WriteLine("Level order traversal using 'next' pointer: ");
+            ConnectLevelOrderSiblings.PrintLevelOrder(root);
         }
     }
 }

@@ -8,32 +8,26 @@ namespace Pattern.BFS
         // 
         public static TreeNode FindSuccessor(TreeNode root, int key)
         {
-            List<List<int>> result = new List<List<int>>();
             Queue<TreeNode> queue = new Queue<TreeNode>();
-            int levelSize;
             
             queue.Enqueue(root);
 
             while (queue.Count > 0)
             {
-                levelSize = queue.Count;
-                List<int> myList = new List<int>();
+                var node = queue.Dequeue();
 
-                for (var i = 0; i<levelSize; i++)
+                if (node.Left != null)
+                    queue.Enqueue(node.Left);
+
+                if (node.Right != null)
+                    queue.Enqueue(node.Right);
+
+                if (node.Value == key)
                 {
-                    var node = queue.Dequeue();
-                    myList.Add(node.Value);
-
-                    if (node.Left != null)
-                        queue.Enqueue(node.Left);
-
-                    if (node.Right != null)
-                        queue.Enqueue(node.Right);
-                    
+                    break;
                 }
-                result.Add(myList);
             }
-            return null;
+            return queue.Peek();
         }
     }
 }
