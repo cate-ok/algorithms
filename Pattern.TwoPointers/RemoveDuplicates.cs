@@ -7,7 +7,7 @@ Move all the unique elements at the beginning of the array and after moving retu
  */
 namespace Pattern.TwoPointers
 {
-    class RemoveDuplicates
+    public class RemoveDuplicates
     {
         // Time O(N), Space O(1)
         public static int Remove(int[] arr)

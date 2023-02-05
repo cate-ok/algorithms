@@ -6,22 +6,28 @@ namespace Pattern.TwoPointers
     {
         static void Main(string[] args)
         {
-            //int[] arr = { 2, 3, 5, 6, 7, 9, 11, 13 };
-            //int k = 9;
-            //var pair = PairWithTargetSum.Search(arr, k);
-            //Console.WriteLine(pair);
+            /*
+             Valid Palindrome
+            Sum of three values
+            Reverse words in a string
+            Valide Palindrome II
+             */
 
-            //int[] arr = { 2, 2, 3, 3, 3, 6, 9, 9 };
-            //var duplicatesNum = RemoveDuplicates.Remove(arr);
-            //Console.WriteLine(duplicatesNum);
+            // Pair with Target Sum (easy)
 
-            //int[] arr = { -2, -1, 0, 2, 3 };
-            //var squares = SquaringSortedArray.MakeSquares(arr);
-            //Console.WriteLine(string.Join(',', squares));
+            // Remove Duplicates (easy)
 
-            int[] arr = { -5, 2, -1, -2, 3 };
-            var triplets = TripletSumToZero.SearchTriplets(arr);
-            
+            // Squaring a Sorted Array (easy)
+
+            // Triplet Sum to Zero (medium)
+
+            // Triplet Sum Close to Target(medium)
+
+            // Triplets with Smaller Sum (medium)
+
+            // Subarrays with Product Less than a Target (medium)
+
+            // Dutch National Flag Problem (medium)
         }
     }
 }

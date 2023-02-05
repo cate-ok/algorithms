@@ -103,15 +103,35 @@ namespace Pattern.BFS
             //    Console.WriteLine(result.Value + " ");
 
 
-            TreeNodeLinked root = new TreeNodeLinked(12);
-            root.Left = new TreeNodeLinked(7);
-            root.Right = new TreeNodeLinked(1);
-            root.Left.Left = new TreeNodeLinked(9);
-            root.Right.Left = new TreeNodeLinked(10);
-            root.Right.Right = new TreeNodeLinked(5);
-            ConnectLevelOrderSiblings.Connect(root);
-            Console.WriteLine("Level order traversal using 'next' pointer: ");
-            ConnectLevelOrderSiblings.PrintLevelOrder(root);
+            //TreeNodeLinked root = new TreeNodeLinked(12);
+            //root.Left = new TreeNodeLinked(7);
+            //root.Right = new TreeNodeLinked(1);
+            //root.Left.Left = new TreeNodeLinked(9);
+            //root.Right.Left = new TreeNodeLinked(10);
+            //root.Right.Right = new TreeNodeLinked(5);
+            //ConnectLevelOrderSiblings.Connect(root);
+            //Console.WriteLine("Level order traversal using 'next' pointer: ");
+            //ConnectLevelOrderSiblings.PrintLevelOrder(root);
+
+
+            TreeNode root = new TreeNode(12);
+            root.Left = new TreeNode(7);
+            root.Right = new TreeNode(1);
+            root.Left.Left = new TreeNode(9);
+            root.Right.Left = new TreeNode(10);
+            root.Right.Right = new TreeNode(5);
+            ConnectAllSiblings.Connect(root);
+
+            // level order traversal using 'next' pointer
+            TreeNode current = root;
+            Console.WriteLine("Traversal using 'next' pointer: ");
+            while (current != null)
+            {
+                Console.WriteLine(current.val + " ");
+                current = current.next;
+            }
+
+
         }
     }
 }

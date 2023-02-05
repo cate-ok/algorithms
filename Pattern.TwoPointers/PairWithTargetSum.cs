@@ -3,9 +3,9 @@
 namespace Pattern.TwoPointers
 {
     // 
-    // Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.
+    // Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target. Return their indices
     // 
-    class PairWithTargetSum
+    public class PairWithTargetSum
     {
         // Time O(N) Space O(1)
         public static int[] Search(int[] arr, int targetSum)

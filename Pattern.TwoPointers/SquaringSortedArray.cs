@@ -2,7 +2,8 @@
 
 namespace Pattern.TwoPointers
 {
-    class SquaringSortedArray
+    // Given a sorted array, create a new array containing squares of all the numbers of the input array in the sorted order.
+    public class SquaringSortedArray
     {
         // Time and spece - O(N)
         public static int[] MakeSquares(int[] arr)
